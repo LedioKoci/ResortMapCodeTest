@@ -7,18 +7,18 @@ An interactive web application for a luxury resort that allows guests to view a 
 This project uses a single entrypoint to launch both the frontend (React) and backend (Node/Express) concurrently.
 
 **1. Install root dependencies** From the root directory of the project, run:
-\`\`\`bash
+\`\`\`
 npm install
 \`\`\`
 
 **2. Start the application** To launch the app using the default `map.ascii` and `bookings.json` files located in the root directory:
-\`\`\`bash
+\`\`\`
 npm start
 \`\`\`
 *The app will automatically open in your browser at `http://localhost:3000`.*
 
 **3. Using Custom Data Files** To specify alternative map or booking files, pass the arguments through the start script. *(Note the `--` separator required by npm)*:
-\`\`\`bash
+\`\`\`
 npm start -- --map custom-map.ascii --bookings custom-bookings.json
 \`\`\`
 *(Alternatively, you can run `./run.sh --map <path> --bookings <path>` if you are on a Unix-based system).*
@@ -30,14 +30,14 @@ npm start -- --map custom-map.ascii --bookings custom-bookings.json
 Automated tests are included to validate core booking logic, API behavior, and UI interactions.
 
 **Backend Tests (Jest + Supertest):**
-\`\`\`bash
+\`\`\`
 cd backend
 npm install  
 npm test
 \`\`\`
 
 **Frontend Tests (React Testing Library):**
-\`\`\`bash
+\`\`\`
 cd frontend
 npm install  
 npm test
